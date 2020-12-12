@@ -15,6 +15,12 @@ Vue.use(ElementUI);
 Vue.use(MyHttpServer);
 
 
+// npm i moment
+// import moment from 'moment'
+// Vue.filter('fmdate',(v)=>{
+//   return moment(v).format('YYYY-MM-DD')
+// })
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

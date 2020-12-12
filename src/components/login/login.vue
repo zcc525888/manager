@@ -47,6 +47,8 @@ export default {
         const {data,msg,status}=res.data
         console.log(status)
         if(status===200){
+
+          localStorage.setItem('token',data.token);
           // this.$router.push({path:'/'})
            this.$router.push({name:'home'})
           this.$message.success("成功哦，"+msg);
